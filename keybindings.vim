@@ -27,3 +27,7 @@ nnoremap <silent> <Leader>ff :call fuzzy#all_files()<CR>
 nnoremap <silent> <Leader>fg :call fuzzy#git_files()<CR>
 nnoremap <silent> <Leader>fc :call fuzzy#git_altered()<CR>
 
+""" Git
+nnoremap <silent> <Leader>gs :Ge :<CR>
+nnoremap <silent> <Leader>ga :Git add %:p<CR>
+
