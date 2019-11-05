@@ -22,3 +22,8 @@ function! s:check_back_space() abort
     return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
+nnoremap <silent> <C-p> :call fuzzy#git_files()<CR>
+nnoremap <silent> <Leader>ff :call fuzzy#all_files()<CR>
+nnoremap <silent> <Leader>fg :call fuzzy#git_files()<CR>
+nnoremap <silent> <Leader>fc :call fuzzy#git_altered()<CR>
+
