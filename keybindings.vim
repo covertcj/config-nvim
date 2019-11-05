@@ -30,4 +30,8 @@ nnoremap <silent> <Leader>fc :call fuzzy#git_altered()<CR>
 """ Git
 nnoremap <silent> <Leader>gs :Ge :<CR>
 nnoremap <silent> <Leader>ga :Git add %:p<CR>
+nnoremap <silent> <Leader>gl :Glog<CR>:bot copen<CR>
+
+nnoremap <silent> <Leader>gps :Dispatch! git push<CR>
+nnoremap <silent> <Leader>gpl :Dispatch! git pull<CR>
 

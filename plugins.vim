@@ -13,5 +13,6 @@ Plug 'junegunn/fzf', {
 \}
 
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-dispatch'
 
 call plug#end()
