@@ -1,4 +1,4 @@
-au FileType fzf set nonu nornu
+au FileType fzf set nonumber norelativenumber signcolumn=no
 
 function! s:find_git_root()
     let l:root = split(system('git rev-parse --show-toplevel'), '\n')[0]
@@ -7,11 +7,10 @@ endfunction
 
 function! fuzzy#floating_fzf()
   let buf = nvim_create_buf(v:false, v:true)
-  call setbufvar(buf, '&signcolumn', 'no')
 
-  let height = float2nr(&lines - (&lines * 1.5 / 10))
-  let row = float2nr((&lines - height) / 2)
-  let width = float2nr(&columns - (&columns * 1 / 10))
+  let height = float2nr(&lines - (&lines * 1 / 10))
+  let row = 0 " float2nr((&lines - height) / 2)
+  let width = float2nr(&columns - (&columns * 2 / 10))
   let col = float2nr((&columns - width) / 2)
 
   let opts = {
