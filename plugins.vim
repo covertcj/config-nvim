@@ -12,4 +12,6 @@ Plug 'junegunn/fzf', {
 \ 'do': './install --bin'
 \}
 
+Plug 'tpope/vim-fugitive'
+
 call plug#end()
