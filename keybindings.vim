@@ -43,3 +43,6 @@ nnoremap <silent> <Leader>gl :Glog<CR>:bot copen<CR>
 nnoremap <silent> <Leader>gps :Dispatch! git push<CR>
 nnoremap <silent> <Leader>gpl :Dispatch! git pull<CR>
 
+""" WinMode
+nnoremap <Leader>wr :WinModeResizeStart<CR>
+
