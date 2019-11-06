@@ -22,13 +22,21 @@ function! s:check_back_space() abort
     return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
-nnoremap <silent> <C-p> :call fuzzy#git_files()<CR>
-nnoremap <silent> <Leader>ff :call fuzzy#all_files()<CR>
-nnoremap <silent> <Leader>fg :call fuzzy#git_files()<CR>
-nnoremap <silent> <Leader>fc :call fuzzy#git_altered()<CR>
+""" FZF
+nnoremap <silent> <C-p> :FzfFiles<CR>
+nnoremap <silent> <Leader>ff :FzfGFiles<CR>
+nnoremap <silent> <Leader>fg :FzfGFiles?<CR>
+
+nnoremap <silent> <Leader>fb :FzfBuffers<CR>
+nnoremap <silent> <Leader>fl :FzfBLines<CR>
+nnoremap <silent> <Leader>fL :FzfLines<CR>
+
+nnoremap <silent> <Leader>fc :FzfBCommits<CR>
+nnoremap <silent> <Leader>fC :FzfCommits<CR>
 
 """ Git
-nnoremap <silent> <Leader>gs :Ge :<CR>
+nnoremap <silent> <Leader>gs :G<CR>
+nnoremap <silent> <Leader>gS :Ge :<CR>
 nnoremap <silent> <Leader>ga :Git add %:p<CR>
 nnoremap <silent> <Leader>gl :Glog<CR>:bot copen<CR>
 

@@ -11,6 +11,7 @@ Plug 'junegunn/fzf', {
 \ 'dir': stdpath('data') . 'fzf',
 \ 'do': './install --bin'
 \}
+Plug 'junegunn/fzf.vim'
 
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-dispatch'
