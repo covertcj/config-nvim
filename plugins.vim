@@ -16,6 +16,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-dispatch'
 
-Plug 'hsanson/vim-winmode'
+Plug 'kana/vim-submode'
 
 call plug#end()

@@ -44,5 +44,21 @@ nnoremap <silent> <Leader>gps :Dispatch! git push<CR>
 nnoremap <silent> <Leader>gpl :Dispatch! git pull<CR>
 
 """ WinMode
-nnoremap <Leader>wr :WinModeResizeStart<CR>
+let g:submode_always_show_submode = 1
+let g:submode_timeoutlen = 5000
+call submode#enter_with('window', 'n', '', '<Leader>w')
+call submode#map('window', 'n', '', 'h', '<C-w><' )
+call submode#map('window', 'n', '', 'H', '<C-w>5<')
+call submode#map('window', 'n', '', 'l', '<C-w>>' )
+call submode#map('window', 'n', '', 'L', '<C-w>5>')
+call submode#map('window', 'n', '', 'j', '<C-w>-' )
+call submode#map('window', 'n', '', 'J', '<C-w>5-')
+call submode#map('window', 'n', '', 'k', '<C-w>+' )
+call submode#map('window', 'n', '', 'K', '<C-w>5+')
+call submode#map('window', 'n', '', '=', '<C-w>=')
+call submode#map('window', 'n', '', 'q', ':vertical resize 80<CR>')
+call submode#map('window', 'n', '', 'w', ':vertical resize 100<CR>')
+call submode#map('window', 'n', '', 'e', ':vertical resize 120<CR>')
+call submode#map('window', 'n', '', 'r', ':vertical resize 140<CR>')
+call submode#leave_with('window', 'n', '', '<Esc>')
 
