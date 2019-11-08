@@ -14,8 +14,9 @@ Plug 'junegunn/fzf', {
 Plug 'junegunn/fzf.vim'
 
 Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-dispatch'
 
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-dispatch'
 Plug 'kana/vim-submode'
 
 call plug#end()
