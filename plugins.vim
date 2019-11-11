@@ -5,6 +5,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'HerringtonDarkholme/yats.vim'
 
+Plug 'lifepillar/vim-solarized8'
 Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 
 Plug 'junegunn/fzf', {

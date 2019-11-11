@@ -12,5 +12,7 @@ call g:LoadConfig('plugcfg/fzf.vim')
 
 call g:LoadConfig('keybindings.vim')
 
-colorscheme challenger_deep
+" colorscheme challenger_deep
+set background=dark
+colorscheme solarized8
 
