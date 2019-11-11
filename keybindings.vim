@@ -1,3 +1,4 @@
+""" CoC {{{
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
@@ -21,8 +22,9 @@ function! s:check_back_space() abort
     let col = col('.') - 1
     return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
+""" }}}
 
-""" FZF
+""" FZF {{{
 nnoremap <silent> <C-p> :FzfFiles<CR>
 nnoremap <silent> <Leader>ff :FzfGFiles<CR>
 nnoremap <silent> <Leader>fg :FzfGFiles?<CR>
@@ -33,8 +35,9 @@ nnoremap <silent> <Leader>fL :FzfLines<CR>
 
 nnoremap <silent> <Leader>fc :FzfBCommits<CR>
 nnoremap <silent> <Leader>fC :FzfCommits<CR>
+""" }}}
 
-""" Git
+""" Git {{{
 nnoremap <silent> <Leader>gs :G<CR>
 nnoremap <silent> <Leader>gS :Ge :<CR>
 nnoremap <silent> <Leader>ga :Git add %:p<CR>
@@ -42,8 +45,9 @@ nnoremap <silent> <Leader>gl :Glog<CR>:bot copen<CR>
 
 nnoremap <silent> <Leader>gps :Dispatch! git push<CR>
 nnoremap <silent> <Leader>gpl :Dispatch! git pull<CR>
+""" }}}
 
-""" WinMode
+""" WinMode {{{
 let g:submode_always_show_submode = 1
 let g:submode_timeoutlen = 5000
 call submode#enter_with('window', 'n', '', '<Leader>w')
@@ -61,4 +65,9 @@ call submode#map('window', 'n', '', 'w', ':vertical resize 100<CR>')
 call submode#map('window', 'n', '', 'e', ':vertical resize 120<CR>')
 call submode#map('window', 'n', '', 'r', ':vertical resize 140<CR>')
 call submode#leave_with('window', 'n', '', '<Esc>')
+""" }}}
+
+""" EasyMotion {{{
+map s <Plug>(easymotion-prefix)
+""" }}}
 

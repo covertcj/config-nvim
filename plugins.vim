@@ -19,5 +19,6 @@ Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-dispatch'
 Plug 'kana/vim-submode'
+Plug 'easymotion/vim-easymotion'
 
 call plug#end()
