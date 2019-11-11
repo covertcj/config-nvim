@@ -12,3 +12,5 @@ set number
 set relativenumber
 
 set termguicolors
+
+let &shell='/bin/bash --login'
