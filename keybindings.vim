@@ -71,3 +71,8 @@ call submode#leave_with('window', 'n', '', '<Esc>')
 map s <Plug>(easymotion-prefix)
 """ }}}
 
+""" Terminal Mode {{{
+tnoremap <Esc> <C-\><C-N>
+tnoremap <C-]> <Esc>
+""" }}}
+
