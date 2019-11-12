@@ -75,6 +75,8 @@ map s <Plug>(easymotion-prefix)
 """ Terminal Mode {{{
 tnoremap <Esc> <C-\><C-N>
 tnoremap <C-]> <Esc>
+
+au FileType fzf tnoremap <buffer> <Esc> <Esc>
 """ }}}
 
 """ Search {{{
