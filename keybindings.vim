@@ -76,3 +76,8 @@ tnoremap <Esc> <C-\><C-N>
 tnoremap <C-]> <Esc>
 """ }}}
 
+""" Search {{{
+" for some reason <C-/> actually maps as <C-_>
+nnoremap <C-_> :nohlsearch<CR>
+""" }}}
+
