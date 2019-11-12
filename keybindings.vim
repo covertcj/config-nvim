@@ -28,6 +28,7 @@ endfunction
 nnoremap <silent> <C-p> :FzfFiles<CR>
 nnoremap <silent> <Leader>ff :FzfGFiles<CR>
 nnoremap <silent> <Leader>fg :FzfGFiles?<CR>
+nnoremap <silent> <Leader>fr :FzfRg 
 
 nnoremap <silent> <Leader>fb :FzfBuffers<CR>
 nnoremap <silent> <Leader>fl :FzfBLines<CR>
