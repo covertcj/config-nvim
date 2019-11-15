@@ -65,6 +65,7 @@ call submode#map('window', 'n', '', 'q', ':vertical resize 80<CR>')
 call submode#map('window', 'n', '', 'w', ':vertical resize 100<CR>')
 call submode#map('window', 'n', '', 'e', ':vertical resize 120<CR>')
 call submode#map('window', 'n', '', 'r', ':vertical resize 140<CR>')
+call submode#map('window', 'n', '', '`', ':resize 6<CR>:set winfixheight<CR>')
 call submode#leave_with('window', 'n', '', '<Esc>')
 """ }}}
 
