@@ -25,8 +25,8 @@ endfunction
 """ }}}
 
 """ FZF {{{
-nnoremap <silent> <C-p> :FzfFiles<CR>
-nnoremap <silent> <Leader>ff :FzfGFiles<CR>
+nnoremap <silent> <C-p> :FzfGFiles<CR>
+nnoremap <silent> <Leader>ff :FzfFiles<CR>
 nnoremap <silent> <Leader>fg :FzfGFiles?<CR>
 nnoremap <silent> <Leader>fr :FzfRg 
 
