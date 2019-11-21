@@ -6,6 +6,8 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gt <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+nmap <leader>. <Plug>(coc-codeaction)
+nmap <leader>, <Plug>(coc-fix-current)
 
 " trigger completion menu with ctrl+space
 inoremap <silent><expr> <c-space> coc#refresh()
