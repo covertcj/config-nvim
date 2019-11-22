@@ -94,6 +94,8 @@ map s <Plug>(easymotion-prefix)
 """ Terminal Mode {{{
 tnoremap <Esc> <C-\><C-N>
 tnoremap <C-]> <Esc>
+
+let g:floaterm_keymap_toggle = '<Leader>t'
 """ }}}
 
 """ Search {{{

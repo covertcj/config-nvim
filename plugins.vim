@@ -21,6 +21,6 @@ Plug 'tpope/vim-dispatch'
 Plug 'kana/vim-submode'
 Plug 'easymotion/vim-easymotion'
 
-Plug 'qpkorr/vim-bufkill'
+Plug 'voldikss/vim-floaterm'
 
 call plug#end()
