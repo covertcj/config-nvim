@@ -9,6 +9,7 @@ call g:LoadConfig('editor.vim')
 
 call g:LoadConfig('plugins.vim')
 call g:LoadConfig('plugcfg/fzf.vim')
+call g:LoadConfig('plugcfg/floaterm.vim')
 
 call g:LoadConfig('keybindings.vim')
 
