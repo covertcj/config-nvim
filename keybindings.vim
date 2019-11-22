@@ -13,6 +13,7 @@ nmap <silent> gr <Plug>(coc-references)
 nmap <Leader>. <Plug>(coc-codeaction)
 nmap <Leader>, <Plug>(coc-fix-current)
 nmap <Leader>rr <Plug>(coc-rename)
+nmap <Leader>rf <Plug>(coc-rename)
 " }}}
 
 " Selection {{{
@@ -48,6 +49,7 @@ nnoremap <silent> <Leader>ff :FzfGFiles<CR>
 nnoremap <silent> <Leader>fg :FzfGFiles?<CR>
 nnoremap <silent> <Leader>fr :FzfRg 
 
+nnoremap <silent> <C-b> :FzfBuffers<CR>
 nnoremap <silent> <Leader>fb :FzfBuffers<CR>
 nnoremap <silent> <Leader>fl :FzfBLines<CR>
 nnoremap <silent> <Leader>fL :FzfLines<CR>
